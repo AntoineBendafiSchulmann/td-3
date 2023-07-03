@@ -26,3 +26,9 @@ php vendor/bin/php-cs-fixer fix src --rules=@PSR12
 ```bash
 php vendor/bin/phpunit tests
 ```
+
+## Usage
+
+you can optain all naruto/naruto shippuden and boruto characters with this library in alphabetical order
+
+
