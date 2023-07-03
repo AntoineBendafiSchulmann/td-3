@@ -2,9 +2,9 @@
 
 use PHPUnit\Framework\TestCase;
 
-require 'Api.php';
+require 'AnimeCharacterFetcher.php';
 
-class ApiTest extends TestCase
+class AnimeCharacterFetcherTest extends TestCase
 {
     private $fetcher;
 
