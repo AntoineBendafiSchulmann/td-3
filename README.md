@@ -1,4 +1,4 @@
-# IIM TD2
+# IIM TD3
 
 [![Last version](https://img.shields.io/packagist/v/antoinebendafi/iim-td3?maxAge=3600)](https://packagist.org/packages/antoinebendafi/iim-td3)
 
