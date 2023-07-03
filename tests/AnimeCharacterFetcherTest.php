@@ -2,7 +2,7 @@
 
 use PHPUnit\Framework\TestCase;
 
-require 'AnimeCharacterFetcher.php';
+require_once __DIR__ . '/../build/AnimeCharacterFetcher.php';
 
 class AnimeCharacterFetcherTest extends TestCase
 {

@@ -5,7 +5,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Iim\\td3\\": "src/"
+            "Iim\\td3\\": "build/"
         }
     },
     "authors": [
@@ -17,7 +17,8 @@
     "require": {
         "php": ">=8.0",
         "guzzlehttp/guzzle": "^7.7",
-        "symfony/dom-crawler": "^6.3"
+        "symfony/dom-crawler": "^6.3",
+        "symfony/css-selector": "^6.3"
     },
     "require-dev": {
         "phpstan/phpstan": "^1.10",
@@ -25,4 +26,3 @@
         "phpunit/phpunit": "^10.2"
     }
 }
-
