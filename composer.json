@@ -1,0 +1,25 @@
+{
+    "name": "antoinebendafi/iim-td3",
+    "description": "a beautiful library package",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Iim\\td2\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "abendafi",
+            "email": "bendafischulmann@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.10",
+        "friendsofphp/php-cs-fixer": "^3.20",
+        "phpunit/phpunit": "^9.6|| ^10.2"
+    }
+}
