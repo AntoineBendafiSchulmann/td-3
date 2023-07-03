@@ -4,7 +4,7 @@ use PHPUnit\Framework\TestCase;
 
 require 'Api.php';
 
-class AnimeCharacterFetcherTest extends TestCase
+class ApiTest extends TestCase
 {
     private $fetcher;
 

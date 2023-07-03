@@ -5,7 +5,7 @@ require 'vendor/autoload.php';
 use GuzzleHttp\Client;
 use Symfony\Component\DomCrawler\Crawler;
 
-class AnimeCharacterFetcher
+class Api
 {
     private $client;
     private $crawler;
