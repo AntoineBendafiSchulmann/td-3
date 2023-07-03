@@ -1,7 +1,7 @@
 <?php
 
-use Iim\td3\AnimeCharacterFetcher;
 use PHPUnit\Framework\TestCase;
+use Iim\AnimeCharacterFetcher;
 
 class AnimeCharacterFetcherTest extends TestCase
 {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Iim\td3;
+namespace Iim;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
