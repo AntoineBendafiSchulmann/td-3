@@ -1,6 +1,6 @@
 <?php
 
-require 'vendor/autoload.php';
+require '/../../vendor/autoload.php';
 
 use GuzzleHttp\Client;
 use Symfony\Component\DomCrawler\Crawler;
