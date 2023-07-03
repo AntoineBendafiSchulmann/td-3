@@ -1,9 +1,13 @@
 <?php
 
+namespace Iim\td3;
+
 require_once __DIR__ . '/../vendor/autoload.php';
+
 
 use GuzzleHttp\Client;
 use Symfony\Component\DomCrawler\Crawler;
+
 
 class AnimeCharacterFetcher
 {

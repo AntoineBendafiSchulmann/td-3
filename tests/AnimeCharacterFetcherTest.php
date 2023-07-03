@@ -1,12 +1,11 @@
 <?php
 
+use Iim\td3\AnimeCharacterFetcher;
 use PHPUnit\Framework\TestCase;
-
-require_once __DIR__ . '/../build/AnimeCharacterFetcher.php';
 
 class AnimeCharacterFetcherTest extends TestCase
 {
-    private $fetcher;
+    private AnimeCharacterFetcher $fetcher;
 
     protected function setUp(): void
     {
@@ -15,19 +14,18 @@ class AnimeCharacterFetcherTest extends TestCase
 
     public function testFetchCharacterNamesAndLinks()
     {
-        $namesAndLinks = $this->fetcher->fetchCharacterNamesAndLinks();
+        $characterNamesAndLinks = $this->fetcher->fetchCharacterNamesAndLinks();
 
-        // Make sure we got an array
-        $this->assertIsArray($namesAndLinks);
+        // Assert that the returned value is an array
+        $this->assertIsArray($characterNamesAndLinks);
 
-        // Make sure the array isn't empty
-        $this->assertNotEmpty($namesAndLinks);
+        // Assert that the array is not empty
+        $this->assertNotEmpty($characterNamesAndLinks);
 
-        // Check a few items in the array to make sure they're formatted correctly
-        foreach ($namesAndLinks as $item) {
-            $this->assertIsArray($item);
-            $this->assertArrayHasKey('name', $item);
-            $this->assertArrayHasKey('link', $item);
+        // Assert that each item in the array has the expected keys
+        foreach ($characterNamesAndLinks as $character) {
+            $this->assertArrayHasKey('name', $character);
+            $this->assertArrayHasKey('link', $character);
         }
     }
 }
