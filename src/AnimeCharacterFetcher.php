@@ -1,14 +1,14 @@
 <?php
 
-require '/../../vendor/autoload.php';
+require 'vendor/autoload.php';
 
 use GuzzleHttp\Client;
 use Symfony\Component\DomCrawler\Crawler;
 
 class AnimeCharacterFetcher
 {
-    private $client;
-    private $crawler;
+    private Client $client;
+    private Crawler $crawler;
 
     public function __construct()
     {
@@ -16,7 +16,10 @@ class AnimeCharacterFetcher
         $this->crawler = new Crawler();
     }
 
-    public function fetchCharacterNamesAndLinks()
+    /**
+     * @return array<array<string>>
+     */
+    public function fetchCharacterNamesAndLinks(): array
     {
         $response = $this->client->get("https://www.nautiljon.com/animes/naruto+shippuden/personnages.html");
         $this->crawler->addHtmlContent($response->getBody()->getContents());
