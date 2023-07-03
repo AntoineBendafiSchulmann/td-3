@@ -25,4 +25,4 @@ jobs:
       - name: 'Run tests'
         run: vendor/bin/phpunit tests
       - name: 'Run phpstan'
-        run: vendor/bin/phpstan analyse src --level=max
+        run: vendor/bin/phpstan analyse build --level=max
